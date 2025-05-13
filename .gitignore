@@ -12,3 +12,6 @@ __pycache__/
 
 # ignore IDE files
 .vscode/
+
+# build files
+build/
