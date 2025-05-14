@@ -4,7 +4,7 @@
 
 LinkedList* createList() {
     LinkedList* list = malloc(sizeof(LinkedList));
-    if(!list) {
+    if (!list) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
     }
@@ -14,7 +14,7 @@ LinkedList* createList() {
 
 void insertFront(LinkedList* list, int data) {
     Node* newNode = malloc(sizeof(Node));
-    if(!newNode) {
+    if (!newNode) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
     }
@@ -25,7 +25,7 @@ void insertFront(LinkedList* list, int data) {
 
 void insertBack(LinkedList* list, int data) {
     Node* newNode = malloc(sizeof(Node));
-    if(!newNode) {
+    if (!newNode) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
     }
