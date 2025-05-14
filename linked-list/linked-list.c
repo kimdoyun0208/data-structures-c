@@ -36,7 +36,7 @@ void insertBack(LinkedList* list, int data) {
         list->head = newNode;
     }
     else {
-        Node *current = list->head;
+        Node* current = list->head;
         while (current->next != NULL) {
             current = current->next;
         }
@@ -48,7 +48,7 @@ void deleteFront(LinkedList* list) {
     if (list->head == NULL)
         return;
     
-    Node *temp = list->head;
+    Node* temp = list->head;
     list->head = list->head->next;
     free(temp);
 }
@@ -63,7 +63,7 @@ void deleteBack(LinkedList* list) {
         return;
     }
     
-    Node *current = list->head;
+    Node* current = list->head;
     while (current->next->next != NULL) {
         current = current->next;
     }
@@ -72,7 +72,7 @@ void deleteBack(LinkedList* list) {
 }
 
 Node* search(LinkedList* list, int target) {
-    Node *current = list->head;
+    Node* current = list->head;
     while (current != NULL) {
         if (current->data == target)
             return current;
@@ -103,9 +103,9 @@ void printList(const LinkedList* list) {
 }
 
 void freeList(LinkedList* list) {
-    Node *current = list->head;
+    Node* current = list->head;
     while (current != NULL) {
-        Node *temp = current->next;
+        Node* temp = current->next;
         free(current);
         current = temp;
     }

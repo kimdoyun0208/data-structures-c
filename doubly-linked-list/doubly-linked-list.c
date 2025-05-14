@@ -3,7 +3,7 @@
 #include "doubly-linked-list.h"
 
 DoublyLinkedList* createList() {
-    DoublyLinkedList *list = malloc(sizeof(DoublyLinkedList));
+    DoublyLinkedList* list = malloc(sizeof(DoublyLinkedList));
     if (!list) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
@@ -14,7 +14,7 @@ DoublyLinkedList* createList() {
 }
 
 void insertFront(DoublyLinkedList* list, int data) {
-    Node *newNode = malloc(sizeof(Node));
+    Node* newNode = malloc(sizeof(Node));
     if (!newNode) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
@@ -36,7 +36,7 @@ void insertFront(DoublyLinkedList* list, int data) {
 }
 
 void insertBack(DoublyLinkedList* list, int data) {
-    Node *newNode = malloc(sizeof(Node));
+    Node* newNode = malloc(sizeof(Node));
     if (!newNode) {
         printf("Memory allocation failed\n");
         exit(EXIT_FAILURE);
@@ -61,7 +61,7 @@ void deleteFront(DoublyLinkedList* list) {
     if (list->head == NULL)
         return;
 
-    Node *temp = list->head;
+    Node* temp = list->head;
 
     if (list->head == list->tail) {
         list->head = NULL;
@@ -79,7 +79,7 @@ void deleteBack(DoublyLinkedList* list) {
     if (list->tail == NULL)
         return;
 
-    Node *temp = list->tail;
+    Node* temp = list->tail;
 
     if (list->head == list->tail) {
         list->head = NULL;
@@ -94,7 +94,7 @@ void deleteBack(DoublyLinkedList* list) {
 }
 
 Node* search(DoublyLinkedList* list, int target) {
-    Node *current = list->head;
+    Node* current = list->head;
     while (current != NULL) {
         if (current->data == target)
             return current;
@@ -104,7 +104,7 @@ Node* search(DoublyLinkedList* list, int target) {
 }
 
 void printForward(const DoublyLinkedList* list) {
-    Node *current = list->head;
+    Node* current = list->head;
 
     if (current == NULL) {
         printf("[ HEAD | NULL ] <=> [ NULL | TAIL ]\n");
@@ -125,7 +125,7 @@ void printForward(const DoublyLinkedList* list) {
 }
 
 void printBackward(const DoublyLinkedList* list) {
-    Node *current = list->tail;
+    Node* current = list->tail;
 
     if (current == NULL) {
         printf("[ TAIL | NULL ] <=> [ NULL | HEAD ]\n");
@@ -146,9 +146,9 @@ void printBackward(const DoublyLinkedList* list) {
 }
 
 void freeList(DoublyLinkedList* list) {
-    Node *current = list->head;
+    Node* current = list->head;
     while (current != NULL) {
-        Node *temp = current->next;
+        Node* temp = current->next;
         free(current);
         current = temp;
     }
