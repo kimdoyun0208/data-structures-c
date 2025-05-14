@@ -86,9 +86,10 @@ void printList(const LinkedList* list) {
 
     if (current == NULL) {
         printf("[ HEAD | NULL ] ");
-    } else {
-        printf("[ HEAD | * ] => ");
+        return;
     }
+    
+    printf("[ HEAD | * ] => ");
 
     while (current != NULL)
     {
