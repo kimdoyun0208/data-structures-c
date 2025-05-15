@@ -1,5 +1,5 @@
-#ifndef STACK_LINKEDLIST_H
-#define STACK_LINKEDLIST_H
+#ifndef QUEUE_ARRAY_H
+#define QUEUE_ARRAY_H
 
 #include <stdbool.h>
 
@@ -19,4 +19,4 @@ bool isFull(const Queue* queue);
 int getSize(const Queue* queue);
 void freeQueue(Queue* queue);
 
-#endif // STACK_LINKEDLIST_H
+#endif // QUEUE_ARRAY_H
