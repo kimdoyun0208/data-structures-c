@@ -5,13 +5,13 @@ C언어 자료구조 구현
 
 ## 구현된 자료구조
 1. **스택 (Stack)**
-   - **연결 리스트 기반 (stack-linkedlist)**
-   - **배열 기반 (stack-array)**
+   - [**연결 리스트 기반 (stack-linkedlist)**](stack-linkedlist/)
+   - [**배열 기반 (stack-array)**](stack-array/)
 2. **큐 (Queue)**
-   - **연결 리스트 기반 (queue-linkedlist)**
-   - **배열 기반 (queue-array)**
-3. **연결 리스트 (Linked List)**
-4. **이중 연결 리스트 (Doubly Linked List)**
+   - [**연결 리스트 기반 (queue-linkedlist)**](queue-linkedlist/)
+   - [**배열 기반 (queue-array)**](queue-array/)
+3. [**연결 리스트 (linked-list)**](linked-list/)
+4. [**이중 연결 리스트 (doubly-linked-list)**](doubly-linked-list/)
 
 ## 디렉토리 구조
 ```
