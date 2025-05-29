@@ -62,4 +62,5 @@ int getSize(const Queue* queue) {
 void freeQueue(Queue* queue) {
     free(queue->data);
     free(queue);
+    queue = NULL;
 }

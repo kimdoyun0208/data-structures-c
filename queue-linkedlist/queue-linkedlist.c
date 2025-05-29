@@ -75,4 +75,5 @@ void freeQueue(Queue* queue) {
         free(temp);
     }
     free(queue);
+    queue = NULL;
 }

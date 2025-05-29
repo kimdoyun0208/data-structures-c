@@ -64,4 +64,5 @@ bool isFull(const Stack* stack) {
 void freeStack(Stack* stack) {
     free(stack->data);
     free(stack);
+    stack = NULL;
 }

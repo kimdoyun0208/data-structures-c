@@ -110,4 +110,5 @@ void freeList(LinkedList* list) {
         current = temp;
     }
     free(list);
+    list = NULL;
 }

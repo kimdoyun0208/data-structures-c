@@ -153,4 +153,5 @@ void freeList(DoublyLinkedList* list) {
         current = temp;
     }
     free(list);
+    list = NULL;
 }

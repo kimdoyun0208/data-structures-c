@@ -60,4 +60,5 @@ void freeStack(Stack* stack) {
         free(temp);
     }
     free(stack);
+    stack = NULL;
 }
