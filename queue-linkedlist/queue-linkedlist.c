@@ -18,10 +18,6 @@ Queue* createQueue() {
     return queue;
 }
 
-// 관점 A.
-// malloc의 실패는 프로그램 자체의 실패를 의미, 즉 enqueue는 void여야 함.
-// 관점 B.
-// 코드의 일관성 측면에서 enqueue또한 bool을 반환할 필요 있음, malloc 실패를 프로그램의 실패로 간주하는 것은 과도한 제한조건임.
 bool enqueue(Queue* queue, int value) {
     Node* newNode = malloc(sizeof(Node));
 
