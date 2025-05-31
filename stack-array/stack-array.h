@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-typedef struct {
+typedef struct Stack {
     int* data;
     int top;
     int capacity;
